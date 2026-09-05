@@ -7,7 +7,7 @@ This package has two parts:
 ```
 backend/    The original AI Debate Arena engine (unchanged) + a new server.py
             that exposes it over HTTP for the web frontend.
-frontend/   A new React + Vite web UI: girly-professional design,
+frontend/   A new React + Vite web UI: professional design,
             dark/light mode, live scoring, moderator controls.
 ```
 
