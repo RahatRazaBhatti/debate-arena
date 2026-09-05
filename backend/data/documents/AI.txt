@@ -1,0 +1,9 @@
+Artificial Intelligence (AI) is transforming industries such as healthcare, finance, education, and transportation.
+
+Machine learning is a branch of AI that enables computers to learn from data without being explicitly programmed.
+
+Large Language Models (LLMs) like GPT are capable of understanding and generating human language.
+
+Deep learning is a subset of machine learning that uses neural networks with many layers.
+
+Natural Language Processing (NLP) allows computers to understand and generate human language.

@@ -1,0 +1,46 @@
+.ar-debate-view {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  animation: fadeIn 0.35s ease;
+}
+
+.ar-view-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ar-view-header h2 {
+  font-family: var(--font-display);
+  margin-bottom: 0.4rem;
+}
+
+.ar-view-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem;
+  gap: 1rem;
+  color: var(--text-secondary);
+}
+
+.ar-spinner {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 3px solid var(--border-light);
+  border-top-color: var(--primary-500);
+  animation: spin 0.8s linear infinite;
+}
+
+@media (max-width: 600px) {
+  .ar-view-header {
+    flex-direction: column;
+  }
+}

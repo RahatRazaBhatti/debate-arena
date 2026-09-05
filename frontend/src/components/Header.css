@@ -1,0 +1,96 @@
+.ar-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.5rem;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 2px 12px var(--shadow-sm);
+  transition: var(--transition-theme);
+}
+
+.ar-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ar-menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.35rem 0.5rem;
+  border-radius: var(--r-sm);
+}
+.ar-menu-btn:hover {
+  background: var(--bg-tertiary);
+}
+
+.ar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ar-logo-mark {
+  font-size: 1.6rem;
+  animation: float 3.2s ease-in-out infinite;
+  filter: drop-shadow(0 2px 6px var(--shadow-md));
+}
+
+.ar-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.ar-logo-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: 0.01em;
+}
+
+.ar-logo-sub {
+  font-size: 0.72rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.ar-theme-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-full);
+  border: 1.5px solid var(--border-normal);
+  background: var(--bg-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.ar-theme-toggle:hover {
+  transform: translateY(-2px) rotate(-8deg);
+  box-shadow: 0 6px 14px var(--shadow-md);
+  border-color: var(--primary-300);
+}
+
+.ar-theme-icon {
+  font-size: 1.15rem;
+}
+
+@media (max-width: 768px) {
+  .ar-menu-btn {
+    display: inline-flex;
+  }
+  .ar-logo-sub {
+    display: none;
+  }
+}

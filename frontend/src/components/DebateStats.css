@@ -1,0 +1,127 @@
+.ar-stats {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  animation: slideUp 0.4s ease;
+}
+
+.ar-stats-progress-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+.ar-progress-track {
+  height: 8px;
+  border-radius: var(--r-full);
+  background: var(--bg-tertiary);
+  overflow: hidden;
+}
+
+.ar-progress-fill {
+  height: 100%;
+  background: var(--gradient-brand);
+  border-radius: var(--r-full);
+  transition: width 0.5s ease;
+}
+
+.ar-meter-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.ar-meter-values {
+  font-variant-numeric: tabular-nums;
+}
+
+.elena-text {
+  color: var(--primary-500);
+}
+.marcus-text {
+  color: var(--accent-600);
+}
+
+.ar-meter-track {
+  height: 10px;
+  border-radius: var(--r-full);
+  background: var(--gradient-marcus);
+  opacity: 0.35;
+  overflow: hidden;
+  position: relative;
+}
+
+.ar-meter-fill {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-elena);
+  opacity: 1;
+  border-radius: var(--r-full);
+  transition: width 0.5s ease;
+}
+
+.ar-contradiction-alert {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #a86400;
+  border-radius: var(--r-sm);
+  padding: 0.6rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+:root[data-theme='dark'] .ar-contradiction-alert {
+  color: #ffc978;
+}
+
+.ar-winner-banner {
+  background: var(--gradient-brand);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: var(--r-sm);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+.ar-confidence-badge {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: var(--r-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.ar-confidence-badge.too-close {
+  background: rgba(245, 158, 11, 0.35);
+}
+
+.ar-claim-ledger {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.ar-claim-ledger-title {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.ar-claim-ledger-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.15rem 0;
+}
+
+.ar-claim-ledger-row span:first-child {
+  text-transform: capitalize;
+}
